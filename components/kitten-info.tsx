@@ -6,10 +6,12 @@ import Button from "@/components/ui/button";
 import { ShoppingCart } from "lucide-react";
 
 interface InfoProps {
-  data: Cat | Kitten;
+  data: Kitten | Cat;
 }
 
 const Info: FC<InfoProps> = ({ data }) => {
+  const isKitten = "status" in data;
+
   return (
     <div>
       <h1 className="text-3xl font-bold text-gray-900">{data.name}</h1>
@@ -25,10 +27,12 @@ const Info: FC<InfoProps> = ({ data }) => {
           <div>{data?.color}</div>
         </div>
 
-        <div className="flex items-center gap-x-4">
-          <h3 className="font-semibold text-black">Status:</h3>
-          <div>{data?.status}</div>
-        </div>
+        {isKitten && (
+          <div className="flex items-center gap-x-4">
+            <h3 className="font-semibold text-black">Status:</h3>
+            <div>{data?.status}</div>
+          </div>
+        )}
       </div>
     </div>
   );

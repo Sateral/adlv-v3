@@ -1,9 +1,7 @@
 import Image from "next/image";
 import { MouseEventHandler } from "react";
 import { Kitten } from "@/types";
-import { useRouter } from "next/navigation";
 import usePreviewModal from "@/hooks/use-preview-modal";
-import IconButton from "./icon-button";
 
 interface KittenCard {
   data: Kitten;

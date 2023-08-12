@@ -1,9 +1,7 @@
 import Image from "next/image";
 import { MouseEventHandler } from "react";
 import { Cat } from "@/types";
-import { useRouter } from "next/navigation";
 import usePreviewModal from "@/hooks/use-preview-modal";
-import IconButton from "./icon-button";
 import { Separator } from "./separator";
 import { cn } from "@/lib/utils";
 
@@ -27,7 +25,7 @@ const CatCard: React.FC<CatCard> = ({ data, title, index }) => {
         <p className="font-karla font-lighta text-2xl">{title}</p>
       )}
       <div
-        className="bg-[#EEEBE7] shadow-lg rounded-lg p-4 grid md:grid-cols-12 grid-cols-1 items-start justify-self-center md:gap-x-12"
+        className="bg-[#EEEBE7] shadow-lg rounded-lg p-4 grid md:grid-cols-12 grid-cols-1 items-start justify-self-center md:gap-x-12 cursor-pointer"
         onClick={onPreview}
       >
         {/* IMAGES AND ACTIONS */}

@@ -4,7 +4,7 @@ import { FC } from "react";
 import usePreviewModal from "@/hooks/use-preview-modal";
 import Modal from "@/components/ui/modal";
 import Gallery from "./gallery";
-import Info from "./info";
+import Info from "./kitten-info";
 
 interface PreviewModalProps {}
 

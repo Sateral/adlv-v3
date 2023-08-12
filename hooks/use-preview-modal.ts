@@ -1,7 +1,6 @@
 import { create } from "zustand";
 
-import { Cat, Kitten } from "@/types";
-
+import { Kitten, Cat } from "@/types";
 interface PreviewModalStore {
   isOpen: boolean;
   data?: Kitten | Cat;
