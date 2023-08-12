@@ -42,11 +42,11 @@ const AboutUs = () => {
             We breed for quality not quantity, so this means we only have a
             limited number of British Shorthair kittens available every year and
             have a waiting list of new owners ready to adopt kittens. Be our
-            dear guest and have a look at what's next on our pages, and if you
-            have discovered that you are one of us, fans of furry British teddy
-            bears, always feel free to contact us about purchasing an "Aurore De
-            La Vie" kitten, or if you need more information about those
-            wonderful animals!
+            dear guest and have a look at what&apos;s next on our pages, and if
+            you have discovered that you are one of us, fans of furry British
+            teddy bears, always feel free to contact us about purchasing an
+            &quot;Aurore De La Vie&quot; kitten, or if you need more information
+            about those wonderful animals!
           </p>
         </div>
       </div>

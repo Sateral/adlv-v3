@@ -32,7 +32,7 @@ const PreviewCards: FC<PreviewCardsProps> = ({ litters, kittens }) => {
 
   useEffect(() => {
     setIsMounted(true);
-  });
+  }, []);
 
   if (!isMounted) {
     return null;

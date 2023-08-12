@@ -13,8 +13,9 @@ const About = () => {
               Welcome to the Aurore de la Vie cattery!
             </p>
             <p className="mt-2">
-              We're Irina and Andrey, and along with our children, we breed and
-              raise British Shorthairs, located in Georgetown, Ontario, Canada.
+              We&apos;re Irina and Andrey, and along with our children, we breed
+              and raise British Shorthairs, located in Georgetown, Ontario,
+              Canada.
             </p>
             <p className="mt-2">
               Our commitment to breeding these magnificent feline companions has
@@ -24,7 +25,7 @@ const About = () => {
               standards of breeding practices for our British Shorthairs.
             </p>
             <p className="mt-2">
-              We've been registered breeders of British Shorthairs with CCA
+              We&apos;ve been registered breeders of British Shorthairs with CCA
               since 2010 and we are members of one of the oldest cat club in
               Canada - Hamilton Cat Fanciers. Our involvement with the cat
               fanciers community allows us to stay connected with fellow

@@ -40,7 +40,7 @@ const CatCards: FC<CatCardsProps> = ({ litters, kittens, parents }) => {
 
   useEffect(() => {
     setIsMounted(true);
-  });
+  }, []);
 
   if (!isMounted) {
     return null;

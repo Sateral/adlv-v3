@@ -34,7 +34,7 @@ const KittenPolicy = () => {
                 </li>
                 <li className="mb-4">
                   Go to new home with samples of the food they have been raised,
-                  the kitten's favorite toys, and recommended diet list.
+                  the kitten&apos;s favorite toys, and recommended diet list.
                 </li>
                 <li>
                   Go to their homes with registration paper from CCA (Canada Cat
@@ -62,7 +62,7 @@ const KittenPolicy = () => {
               all necessary veterinary care to maintain its health. It is fully
               understood and acknowledged between both parties that no
               long-range guarantee can be offered to the varying condition in
-              the kitten's new home environment.
+              the kitten&apos;s new home environment.
             </li>
           </ol>
         </div>
