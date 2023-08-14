@@ -14,7 +14,7 @@ const Info: FC<InfoProps> = ({ data }) => {
 
   return (
     <div>
-      <h1 className="text-3xl font-bold text-gray-900">{data.name}</h1>
+      <h1 className="text-3xl font-bold text-gray-900 z-0">{data.name}</h1>
       <hr className="my-4" />
       <div className="flex flex-col gap-y-6">
         <div className="flex items-center gap-x-4">

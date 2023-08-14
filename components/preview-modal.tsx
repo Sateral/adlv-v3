@@ -18,7 +18,7 @@ const PreviewModal: FC<PreviewModalProps> = ({}) => {
 
   return (
     <Modal open={previewModal.isOpen} onClose={previewModal.onClose}>
-      <div className="grid w-full grid-cols-1 items-start gap-x-6 gap-y-2 sm:grid-cols-12 lg:gap-x-8 z-[9999]">
+      <div className="grid w-full grid-cols-1 items-start gap-x-6 gap-y-2 sm:grid-cols-12 lg:gap-x-8">
         <div className="sm:col-span-9 lg:col-span-9">
           <Gallery images={product.images} />
         </div>

@@ -5,6 +5,9 @@ import { FC } from "react";
 
 interface KingsProps {}
 
+export const revalidate = 0;
+export const dynamic = "force-dynamic";
+
 const Kings: FC<KingsProps> = async ({}) => {
   const cats = await getCats();
   const kings = cats.filter((king) => king.gender === "M");

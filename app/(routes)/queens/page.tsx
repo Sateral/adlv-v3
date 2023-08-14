@@ -5,6 +5,9 @@ import { FC } from "react";
 
 interface QueensProps {}
 
+export const revalidate = 0;
+export const dynamic = "force-dynamic";
+
 const Queens: FC<QueensProps> = async ({}) => {
   const cats = await getCats();
   const queens = cats.filter((queen) => queen.gender === "F");

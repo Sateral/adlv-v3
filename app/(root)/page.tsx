@@ -1,7 +1,10 @@
 import HomePageHero from "./components/hero";
 import About from "./components/about";
 import Preview from "./components/preview";
-import ContactUs from "./components/contact";
+import Contact from "@/components/contact";
+
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 const HomePage = () => {
   return (
@@ -12,7 +15,7 @@ const HomePage = () => {
 
       <Preview />
 
-      <ContactUs />
+      <Contact />
     </>
   );
 };

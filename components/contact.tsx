@@ -6,7 +6,7 @@ import Container from "@/components/ui/container";
 import { toast } from "react-hot-toast";
 import Button from "@/components/ui/button";
 
-const ContactUs = () => {
+const Contact = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
 
   const formatPhoneNumber = (value: any) => {
@@ -125,4 +125,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default Contact;

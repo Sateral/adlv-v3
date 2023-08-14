@@ -9,6 +9,9 @@ import Hero from "@/components/hero";
 
 interface KittensPageProps {}
 
+export const revalidate = 0;
+export const dynamic = "force-dynamic";
+
 const KittensPage: FC<KittensPageProps> = async ({}) => {
   const litters = await getLitters();
   const kittens = await getKittens();
