@@ -16,7 +16,7 @@ const KittensPage: FC<KittensPageProps> = async ({}) => {
   const litters = await getLitters();
   const kittens = await getKittens();
 
-  const cats = await getCats();
+  const cats = await getCats({});
   return (
     <div className="bg-[#EDEFEB]">
       <Hero title="Kittens" sub="of Aurore de la Vie" />
