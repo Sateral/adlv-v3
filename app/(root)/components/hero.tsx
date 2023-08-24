@@ -1,4 +1,4 @@
-import BgImage from "@/public/Hero.jpg";
+import BgImage from "@/public/Hero4.jpg";
 
 const HomePageHero = () => {
   return (

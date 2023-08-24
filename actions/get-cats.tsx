@@ -3,21 +3,19 @@ import qs from "query-string";
 
 const URL = `${process.env.NEXT_PUBLIC_API_URL}/cats`;
 
-// interface Query {
-//   letter?: string;
-//   birthDate?: string;
-// }
+interface Query {
+  forSale?: boolean;
+}
 
-const getCats = async (): Promise<Cat[]> => {
-  // const url = qs.stringifyUrl({
-  //   url: URL,
-  //   query: {
-  //     letter: query.letter,
-  //     birthDate: query.birthDate,
-  //   },
-  // });
+const getCats = async (query: Query): Promise<Cat[]> => {
+  const url = qs.stringifyUrl({
+    url: URL,
+    query: {
+      forSale: query.forSale,
+    },
+  });
 
-  const res = await fetch(URL);
+  const res = await fetch(url);
 
   return res.json();
 };

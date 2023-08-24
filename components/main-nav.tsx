@@ -38,6 +38,11 @@ const MainNav = () => {
       active: pathname === "/kittens",
     },
     {
+      href: "/cats",
+      label: "Cats",
+      active: pathname === "/kittens",
+    },
+    {
       href: "/important-info",
       label: "Important Info",
       active: pathname === "/important-info",
@@ -67,7 +72,7 @@ const MainNav = () => {
               key={route.href}
               href={route.href}
               className={cn(
-                "text-lg font-rem capitalize font-light transition-colors before:transition-all hover:text-[#313131] before:content-[''] before:block before:h-1 before:bg-[#83786f] before:relative before:w-0 hover:before:w-full",
+                "xl:text-lg text-base font-rem capitalize font-light transition-colors before:transition-all hover:text-[#313131] before:content-[''] before:block before:h-1 before:bg-[#83786f] before:relative before:w-0 hover:before:w-full",
                 route.active
                   ? "text-[#493e30] font-normal"
                   : "text-secondary-tan"

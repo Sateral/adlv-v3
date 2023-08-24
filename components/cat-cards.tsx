@@ -16,7 +16,7 @@ import Parents from "@/app/(routes)/kittens/components/parents";
 interface CatCardsProps {
   parents: Cat[];
   litters: Litter[];
-  kittens: Kitten[];
+  kittens: Kitten[] | Cat[];
 }
 
 const CatCards: FC<CatCardsProps> = ({ litters, kittens, parents }) => {

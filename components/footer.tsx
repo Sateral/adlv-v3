@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex-1 flex justify-center">
           <ul className="list-none">
             <li className="pb-2">
-              <Link href="/Contact" className="underline">
+              <Link href="/contact-us" className="underline">
                 Find Us
               </Link>
             </li>

@@ -9,7 +9,8 @@ export const revalidate = 0;
 export const dynamic = "force-dynamic";
 
 const Kings: FC<KingsProps> = async ({}) => {
-  const cats = await getCats();
+  const cats = await getCats({ forSale: false });
+  console.log(cats);
   const kings = cats.filter((king) => king.gender === "M");
 
   return (
