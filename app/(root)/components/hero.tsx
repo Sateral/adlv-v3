@@ -7,10 +7,10 @@ const HomePageHero = () => {
       style={{ backgroundImage: `url(${BgImage.src})` }}
     >
       <div className="w-full max-w-[1580px] flex flex-col justify-center px-12">
-        <div className="w-max text-[#7a7166] font-karla lg:text-4xl sm:text-2xl text-xl font-light md:font-normal">
+        <div className="w-max text-[#7a7166] font-karla lg:text-4xl text-2xl font-light md:font-normal">
           <h2>Welcome to the</h2>
 
-          <h1 className="font-dancing font-semibold lg:text-8xl md:text-7xl sm:text-6xl text-5xl text-primary-tan">
+          <h1 className="font-dancing font-semibold lg:text-8xl md:text-7xl ss:text-6xl text-4xl text-primary-tan">
             Aurore de la Vie
           </h1>
 
