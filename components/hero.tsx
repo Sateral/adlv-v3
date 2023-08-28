@@ -1,5 +1,5 @@
 import { FC } from "react";
-import BgImage from "@/public/ForestTest.jpg";
+import BgImage from "@/public/ForestTest-compressed.jpg";
 
 interface HeroProps {
   title: string;
