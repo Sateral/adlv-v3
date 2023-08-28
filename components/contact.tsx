@@ -112,6 +112,7 @@ const Contact = () => {
                 cols={50}
                 placeholder="Please enter any questions you have"
                 className="block h-[100px] w-full rounded-[5px] border-none mt-[10px] p-[10px]"
+                required
               ></textarea>
 
               <div className="w-full flex justify-center items-center mt-4">

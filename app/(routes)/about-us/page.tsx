@@ -1,10 +1,11 @@
 import Hero from "@/components/hero";
+import Yossi from "@/public/Yossi13.webp";
 
 const AboutUs = () => {
   return (
     <>
       <Hero title="About Us" />
-      <div className="bg-[#EDEFEB]">
+      <div className="bg-[#EDEFEB] pb-8">
         <div className="mx-auto max-w-7xl font-karla p-8 text-lg">
           <p className="pb-4">
             The Cheshire smile, huge chubby cheeks and the plush look of a
@@ -48,6 +49,16 @@ const AboutUs = () => {
             &quot;Aurore De La Vie&quot; kitten, or if you need more information
             about those wonderful animals!
           </p>
+        </div>
+
+        <div className="w-full h-[30vh] bg-[#EBE4DA] border-t-8 border-b-8 border-[#EBE4DA]">
+          <div
+            className="md:w-[60%] w-[80%] h-full m-auto bg-transparent bg-no-repeat bg-cover opacity-80 rounded-lg"
+            style={{
+              backgroundImage: `url(${Yossi.src})`,
+              backgroundPosition: "80% center",
+            }}
+          ></div>
         </div>
       </div>
     </>

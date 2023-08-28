@@ -39,8 +39,8 @@ const MainNav = () => {
     },
     {
       href: "/cats",
-      label: "Cats",
-      active: pathname === "/kittens",
+      label: "Retired Cats",
+      active: pathname === "/cats",
     },
     {
       href: "/important-info",
@@ -61,8 +61,8 @@ const MainNav = () => {
       }`}
     >
       <div className="flex flex-row items-center justify-between w-full transition-all ease-in-out h-16">
-        <Link href="/">
-          <span className="font-dancing text-4xl text-whitesmoke font-semibold text-primary-tan">
+        <Link href="/" onClick={() => setToggle(false)}>
+          <span className="font-dancing xl:text-4xl text-3xl text-whitesmoke font-semibold text-primary-tan">
             Aurore de la Vie
           </span>
         </Link>
@@ -91,23 +91,21 @@ const MainNav = () => {
       </div>
 
       <div className="lg:hidden">
-        {!toggle ? null : (
-          <div className="flex flex-col space-y-4">
-            {routes.map((route) => (
-              <Link
-                key={route.href}
-                href={route.href}
-                onClick={() => setToggle(!toggle)}
-                className={cn(
-                  "text-md font-medium transition-colors hover:text-black",
-                  route.active ? "text-black" : "text-neutral-500"
-                )}
-              >
-                {route.label}
-              </Link>
-            ))}
-          </div>
-        )}
+        <div className="flex flex-col space-y-4">
+          {routes.map((route) => (
+            <Link
+              key={route.href}
+              href={route.href}
+              onClick={() => setToggle(!toggle)}
+              className={cn(
+                "text-md font-medium transition-colors hover:text-black",
+                route.active ? "text-black" : "text-neutral-500"
+              )}
+            >
+              {route.label}
+            </Link>
+          ))}
+        </div>
       </div>
     </nav>
   );

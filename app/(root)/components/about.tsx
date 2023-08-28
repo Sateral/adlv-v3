@@ -45,7 +45,7 @@ const About = () => {
             src={Irina}
             priority={true}
             alt="Irina of Aurore de la Vie"
-            className="max-w-[380px] max-h-[285px] rounded-lg shadow-xl"
+            className="rounded-lg shadow-xl"
           />
         </div>
       </Container>

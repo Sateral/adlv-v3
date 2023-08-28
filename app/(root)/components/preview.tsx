@@ -11,7 +11,7 @@ const Preview = async () => {
   const litters = await getLitters();
   const kittens = await getKittens();
   return (
-    <div className="bg-[#e1e2e1] border-secondary-tan">
+    <div className="bg-[#ebe4da] border-secondary-tan border-y-[1px]">
       <Container>
         <PreviewCards litters={litters} kittens={kittens} />
       </Container>

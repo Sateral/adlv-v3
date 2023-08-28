@@ -46,24 +46,26 @@ const PreviewCards: FC<PreviewCardsProps> = ({ litters, kittens }) => {
 
       <Separator className="h-[2px] bg-primary-tan rounded-full" />
 
-      <div className="pb-6 pt-2 flex flex-row items-center gap-2">
-        <h2 className="font-karla text-xl text-primary-tan">
-          British Shorthair Litter:
-        </h2>
-        <Select onValueChange={handleLitterChange}>
-          <SelectTrigger className="w-[180px] bg-[#f8f7f7]">
-            <SelectValue>{litterLetter}</SelectValue>
-          </SelectTrigger>
-          <SelectContent>
-            {litters.map((litter) => (
-              <SelectItem key={litter.id} value={litter.letter}>
-                {litter.letter}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
+      <div className="pb-6 pt-2">
+        <div className=" flex flex-row items-center gap-2">
+          <h2 className="font-karla text-xl text-primary-tan">
+            British Shorthair Litter:
+          </h2>
+          <Select onValueChange={handleLitterChange}>
+            <SelectTrigger className="w-[180px] bg-[#f8f7f7]">
+              <SelectValue>{litterLetter}</SelectValue>
+            </SelectTrigger>
+            <SelectContent>
+              {litters.map((litter) => (
+                <SelectItem key={litter.id} value={litter.letter}>
+                  {litter.letter}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
+        <p className="font-karla ss:ml-[234px] ml-0">Click to switch litter</p>
       </div>
-
       <div className="flex flex-col gap-y-8 ">
         <ProductList items={filteredKittens} />
       </div>
