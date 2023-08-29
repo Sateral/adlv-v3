@@ -85,6 +85,24 @@ const CatCards: FC<CatCardsProps> = ({ litters, kittens, parents }) => {
         <p className="text-2xl">Kittens</p>
         <p className="font-karla text-xl">Born: {selectedLitter?.birthDate}</p>
         <Separator className="bg-[#c2a991] h-[2px]" />
+        <div className="pb-1 pt-2 flex flex-row items-center gap-2">
+          <h2 className="font-karla text-xl text-primary-tan">
+            Switch Litter:
+          </h2>
+
+          <Select onValueChange={handleLitterChange}>
+            <SelectTrigger className="w-[180px] bg-[#f8f7f7]">
+              <SelectValue>{litterLetter}</SelectValue>
+            </SelectTrigger>
+            <SelectContent>
+              {litters.map((litter) => (
+                <SelectItem key={litter.id} value={litter.letter}>
+                  {litter.letter}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
         <p className="font-karla text-lg italic font-semibold">
           Click on the kitten to expand
         </p>
