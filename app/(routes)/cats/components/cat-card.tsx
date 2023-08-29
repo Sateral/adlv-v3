@@ -5,11 +5,11 @@ import { MouseEventHandler } from "react";
 import { Cat } from "@/types";
 import usePreviewModal from "@/hooks/use-preview-modal";
 
-interface KittenCard {
+interface CatCard {
   data: Cat;
 }
 
-const KittenCard: React.FC<KittenCard> = ({ data }) => {
+const CatCard: React.FC<CatCard> = ({ data }) => {
   const previewModal = usePreviewModal();
 
   const onPreview: MouseEventHandler<HTMLDivElement> = (event) => {
@@ -43,7 +43,9 @@ const KittenCard: React.FC<KittenCard> = ({ data }) => {
       </div>
       {/* DESCRIPTION */}
       <div>
-        <p className="font-normal text-lg">{data.name}</p>
+        <p className="font-normal text-lg">
+          {data.name} {data.name === "Natasha" && "(Free)"}
+        </p>
         <p className="font-normal text-sm">Gender: {data.gender}</p>
         <p className="font-normal text-sm">Color: {data.color}</p>
       </div>
@@ -51,4 +53,4 @@ const KittenCard: React.FC<KittenCard> = ({ data }) => {
   );
 };
 
-export default KittenCard;
+export default CatCard;

@@ -39,7 +39,7 @@ const MainNav = () => {
     },
     {
       href: "/cats",
-      label: "Retired Cats",
+      label: "Adult Cats for Sale",
       active: pathname === "/cats",
     },
     {
@@ -72,7 +72,7 @@ const MainNav = () => {
               key={route.href}
               href={route.href}
               className={cn(
-                "xl:text-lg text-base font-rem capitalize font-light transition-colors before:transition-all hover:text-[#313131] before:content-[''] before:block before:h-1 before:bg-[#83786f] before:relative before:w-0 hover:before:w-full",
+                "xl:text-lg mm:text-base text-sm font-rem capitalize font-light transition-colors before:transition-all hover:text-[#313131] before:content-[''] before:block before:h-1 before:bg-[#83786f] before:relative before:w-0 hover:before:w-full",
                 route.active
                   ? "text-[#493e30] font-normal"
                   : "text-secondary-tan"

@@ -55,6 +55,7 @@ module.exports = {
       },
       screens: {
         ss: "560px",
+        mm: "1090px",
       },
       borderRadius: {
         lg: "var(--radius)",
