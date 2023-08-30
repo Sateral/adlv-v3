@@ -17,7 +17,7 @@ const KittenCard: React.FC<KittenCard> = ({ data }) => {
 
   return (
     <div
-      className="bg-[#f3f3f3] shadow-lg group rounded-xl border p-3 space-y-4 cursor-pointer"
+      className="bg-[#f3f3f3] shadow-lg group rounded-xl border p-3 space-y-4 cursor-pointer hover:scale-[1.02] duration-100 ease-in-out"
       onClick={onPreview}
     >
       {/* IMAGES AND ACTIONS */}

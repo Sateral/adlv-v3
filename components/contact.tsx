@@ -50,79 +50,77 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-[#EDEFEB]">
-      <Container>
-        <div className="h-full w-full text-whitesmoke text-[20px] p-[20px]">
-          <h2 className="text-center px-[50px] pb-[30px] font-karla text-primary-tan text-[36px] font-semibold">
-            Contact Us!
-          </h2>
-          <form
-            id="survey-form"
-            onSubmit={(e) => {
-              sendEmail(e);
-              handleSubmit(e);
-            }}
-          >
-            <fieldset className="w-full max-w-[800px] m-auto border-none font-karla text-primary-tan">
-              <input type="hidden" name="_captcha" value="false" />
+    <Container>
+      <div className="h-full w-full text-whitesmoke text-[20px] p-[20px]">
+        <h2 className="text-center px-[50px] pb-[30px] font-karla text-primary-tan text-[36px] font-semibold">
+          Contact Us!
+        </h2>
+        <form
+          id="survey-form"
+          onSubmit={(e) => {
+            sendEmail(e);
+            handleSubmit(e);
+          }}
+        >
+          <fieldset className="w-full max-w-[800px] m-auto border-none font-karla text-primary-tan">
+            <input type="hidden" name="_captcha" value="false" />
 
-              <label htmlFor="name" id="name-label">
-                Name:
-              </label>
-              <input
-                className="p-2 my-[10px] mb-[25px] w-full h-[50px] border-none rounded-[5px]"
-                name="name"
-                type="text"
-                id="name"
-                placeholder="Please enter your name"
-                required
-              />
+            <label htmlFor="name" id="name-label">
+              Name:
+            </label>
+            <input
+              className="p-2 my-[10px] mb-[25px] w-full h-[50px] border-none rounded-[5px]"
+              name="name"
+              type="text"
+              id="name"
+              placeholder="Please enter your name"
+              required
+            />
 
-              <label htmlFor="email" id="email-label">
-                Email Address:
-              </label>
-              <input
-                className="p-2 my-[10px] mb-[25px] w-full h-[50px] border-none rounded-[5px]"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Please enter your email"
-                required
-              />
+            <label htmlFor="email" id="email-label">
+              Email Address:
+            </label>
+            <input
+              className="p-2 my-[10px] mb-[25px] w-full h-[50px] border-none rounded-[5px]"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Please enter your email"
+              required
+            />
 
-              <label htmlFor="phone" id="phone-label">
-                Phone number:
-              </label>
-              <input
-                className="p-2 my-[10px] mb-[25px] w-full h-[50px] border-none rounded-[5px]"
-                type="tel"
-                id="phone"
-                name="PhoneNumber"
-                value={phoneNumber}
-                onChange={handlePhoneNumberChange}
-                placeholder="Please enter your phone number"
-                required
-              />
-              <label htmlFor="questions">Any questions?</label>
+            <label htmlFor="phone" id="phone-label">
+              Phone number:
+            </label>
+            <input
+              className="p-2 my-[10px] mb-[25px] w-full h-[50px] border-none rounded-[5px]"
+              type="tel"
+              id="phone"
+              name="PhoneNumber"
+              value={phoneNumber}
+              onChange={handlePhoneNumberChange}
+              placeholder="Please enter your phone number"
+              required
+            />
+            <label htmlFor="questions">Any questions?</label>
 
-              <textarea
-                id="questions"
-                name="message"
-                rows={3}
-                cols={50}
-                placeholder="Please enter any questions you have"
-                className="block h-[100px] w-full rounded-[5px] border-none mt-[10px] p-[10px]"
-                required
-              ></textarea>
+            <textarea
+              id="questions"
+              name="message"
+              rows={3}
+              cols={50}
+              placeholder="Please enter any questions you have"
+              className="block h-[100px] w-full rounded-[5px] border-none mt-[10px] p-[10px]"
+              required
+            ></textarea>
 
-              <div className="w-full flex justify-center items-center mt-4">
-                <Button className="bg-secondary-tan">Submit</Button>
-              </div>
-            </fieldset>
-          </form>
-        </div>
-      </Container>
-    </div>
+            <div className="w-full flex justify-center items-center mt-4">
+              <Button className="bg-secondary-tan">Submit</Button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </Container>
   );
 };
 
