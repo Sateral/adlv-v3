@@ -23,7 +23,7 @@ const ContactUs = () => {
             Email us at:
           </p>
           <ul className="list-disc ml-16 text-xl">
-            <li>kopylenkod@gmail.com</li>
+            <li>kopylenkoa@gmail.com</li>
           </ul>
 
           <p className="mt-8 text-2xl flex flex-row items-center">
